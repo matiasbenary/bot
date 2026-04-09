@@ -6,6 +6,7 @@ const programs = [
     sessions: "4x / week",
     level: "All levels",
     color: "from-green-900/40 to-black",
+    href: "https://www.figma.com/community/file/powerlift-program",
   },
   {
     tag: "Cardio",
@@ -14,6 +15,7 @@ const programs = [
     sessions: "5x / week",
     level: "Intermediate",
     color: "from-emerald-900/40 to-black",
+    href: "https://www.figma.com/community/file/hiit-blitz-program",
   },
   {
     tag: "Mobility",
@@ -22,6 +24,7 @@ const programs = [
     sessions: "3x / week",
     level: "All levels",
     color: "from-green-800/30 to-black",
+    href: "https://www.figma.com/community/file/flexflow-program",
   },
   {
     tag: "Sport",
@@ -30,6 +33,7 @@ const programs = [
     sessions: "4x / week",
     level: "Advanced",
     color: "from-lime-900/30 to-black",
+    href: "https://www.figma.com/community/file/athletic-edge-program",
   },
 ];
 
@@ -71,7 +75,9 @@ export default function Programs() {
                   <span className="text-xs text-white/40">{p.level}</span>
                 </div>
                 <a
-                  href="#pricing"
+                  href={p.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-green-400 text-sm font-semibold hover:text-green-300 transition-colors"
                 >
                   Learn more →
